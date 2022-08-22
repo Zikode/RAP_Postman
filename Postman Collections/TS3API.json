@@ -572,42 +572,6 @@
 									]
 								},
 								{
-									"name": "{{baseUrl}}/search/api/fixtures/manuallotto_4082680",
-									"id": "8f7b730c-a4ff-4070-84fe-1c948b3dc59d",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/search/api/fixtures/manuallotto_4082680",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"search",
-												"api",
-												"fixtures",
-												"manuallotto_4082680"
-											],
-											"query": [
-												{
-													"key": "Id",
-													"value": "ts_1727415",
-													"disabled": true
-												},
-												{
-													"key": "m-limit",
-													"value": "50",
-													"disabled": true
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
 									"name": "{{baseUrl}}/search/api/fixtures?f-status=OPEN&f-quick-search-code=435456456165&m-min=1&f-limit=8",
 									"event": [
 										{
