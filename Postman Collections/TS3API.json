@@ -1,0 +1,892 @@
+{
+	"info": {
+		"_postman_id": "e99ff581-11ce-4442-8db3-c0a8e2cbf43d",
+		"name": "RAP_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Wagering",
+			"item": [
+				{
+					"name": "Search",
+					"item": [
+						{
+							"name": "Smoke",
+							"item": [
+								{
+									"name": "/fixtures/id",
+									"id": "33b1da75-8c8a-4ca3-a53a-60d59005540b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": [
+										{
+											"id": "5823d2b9-afea-4984-879f-bc5ffc13dd63",
+											"name": "lotto-smk-001",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "https://autotest2.app.qa.tsretail.co.za/search/api/fixtures/manuallotto_4088051",
+													"protocol": "https",
+													"host": [
+														"autotest2",
+														"app",
+														"qa",
+														"tsretail",
+														"co",
+														"za"
+													],
+													"path": [
+														"search",
+														"api",
+														"fixtures",
+														"manuallotto_4088051"
+													],
+													"query": [
+														{
+															"key": "f-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-limit",
+															"value": "50",
+															"disabled": true
+														},
+														{
+															"key": "f-name",
+															"value": "UK%2049",
+															"disabled": true
+														},
+														{
+															"key": "m-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-game-type",
+															"value": "LOTTO",
+															"disabled": true
+														},
+														{
+															"key": "m-limit",
+															"value": "100",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												},
+												{
+													"key": "Content-Length",
+													"value": "233",
+													"enabled": true
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "x-api-key, Authorization, Content-Type, Wallet, wallet-id, punter-id",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "POST,PUT,GET,OPTIONS,DELETE",
+													"enabled": true
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip",
+													"enabled": true
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 10 Aug 2022 13:26:01 GMT",
+													"enabled": true
+												},
+												{
+													"key": "Server",
+													"value": "nginx/1.15.8",
+													"enabled": true
+												},
+												{
+													"key": "Vary",
+													"value": "Accept-Encoding",
+													"enabled": true
+												},
+												{
+													"key": "X-Cache",
+													"value": "Miss from cloudfront",
+													"enabled": true
+												},
+												{
+													"key": "Via",
+													"value": "1.1 b38c85b91efc7fa1238f9c75e1e5d932.cloudfront.net (CloudFront)",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Pop",
+													"value": "IAD79-C3",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Id",
+													"value": "4p5zVHCbleuthMt-z8D43wJfHaIOgLoRXcXs2O5IJkL316Ez9mQr1A==",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"id\": \"manuallotto_4088051\",\n    \"status\": \"OPEN\",\n    \"filters\": [],\n    \"gameType\": \"LOTTO\",\n    \"name\": \"RUSSIA GOSLOTO 7/49 - 18h00 DRAW (4)\",\n    \"wagerCloseDate\": \"2022-08-10T16:00:00Z\",\n    \"date\": \"2022-08-10T16:00:00Z\",\n    \"markets\": [\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"manuallotto_4088051\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"manuallotto_4088051\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"manuallotto_4088051\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"manuallotto_4088051\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"manuallotto_4088051\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        }\n    ]\n}"
+										},
+										{
+											"id": "03cc731c-2a8b-4c66-b140-723c98403d29",
+											"name": "soccer-smk-002",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "https://autotest2.app.qa.tsretail.co.za/search/api/fixtures/ts_1762570",
+													"protocol": "https",
+													"host": [
+														"autotest2",
+														"app",
+														"qa",
+														"tsretail",
+														"co",
+														"za"
+													],
+													"path": [
+														"search",
+														"api",
+														"fixtures",
+														"ts_1762570"
+													],
+													"query": [
+														{
+															"key": "f-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-limit",
+															"value": "50",
+															"disabled": true
+														},
+														{
+															"key": "f-name",
+															"value": "UK%2049",
+															"disabled": true
+														},
+														{
+															"key": "m-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-game-type",
+															"value": "LOTTO",
+															"disabled": true
+														},
+														{
+															"key": "m-limit",
+															"value": "100",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												},
+												{
+													"key": "Content-Length",
+													"value": "274",
+													"enabled": true
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "x-api-key, Authorization, Content-Type, Wallet, wallet-id, punter-id",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "POST,PUT,GET,OPTIONS,DELETE",
+													"enabled": true
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip",
+													"enabled": true
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 10 Aug 2022 13:31:30 GMT",
+													"enabled": true
+												},
+												{
+													"key": "Server",
+													"value": "nginx/1.15.8",
+													"enabled": true
+												},
+												{
+													"key": "Vary",
+													"value": "Accept-Encoding",
+													"enabled": true
+												},
+												{
+													"key": "X-Cache",
+													"value": "Miss from cloudfront",
+													"enabled": true
+												},
+												{
+													"key": "Via",
+													"value": "1.1 a0042b5b0abdf83ac753e9d8be59e4e4.cloudfront.net (CloudFront)",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Pop",
+													"value": "IAD79-C3",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Id",
+													"value": "YA-nREeoRFOPjDJ4CJ_ywDhjpkkw_iaw4tqhGggnJS_qgIobcrV5ag==",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"id\": \"ts_1762570\",\n    \"status\": \"OPEN\",\n    \"quickSearchCode\": \"62420\",\n    \"filters\": [],\n    \"gameType\": \"SPORT\",\n    \"name\": \"Liversedge vs. Ashton United FC\",\n    \"wagerCloseDate\": \"2022-08-13T14:00:00Z\",\n    \"date\": \"2022-08-13T14:00:00Z\",\n    \"markets\": [\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1762570\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        }\n    ]\n}"
+										},
+										{
+											"id": "aa6eb385-c533-43bc-bca8-5b57d200abe0",
+											"name": "HorseRacing-smk-003",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "https://autotest2.app.qa.tsretail.co.za/search/api/fixtures/ts_1765758",
+													"protocol": "https",
+													"host": [
+														"autotest2",
+														"app",
+														"qa",
+														"tsretail",
+														"co",
+														"za"
+													],
+													"path": [
+														"search",
+														"api",
+														"fixtures",
+														"ts_1765758"
+													],
+													"query": [
+														{
+															"key": "f-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-limit",
+															"value": "50",
+															"disabled": true
+														},
+														{
+															"key": "f-name",
+															"value": "UK%2049",
+															"disabled": true
+														},
+														{
+															"key": "m-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-game-type",
+															"value": "LOTTO",
+															"disabled": true
+														},
+														{
+															"key": "m-limit",
+															"value": "100",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												},
+												{
+													"key": "Content-Length",
+													"value": "196",
+													"enabled": true
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "x-api-key, Authorization, Content-Type, Wallet, wallet-id, punter-id",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "POST,PUT,GET,OPTIONS,DELETE",
+													"enabled": true
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip",
+													"enabled": true
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 10 Aug 2022 13:41:05 GMT",
+													"enabled": true
+												},
+												{
+													"key": "Server",
+													"value": "nginx/1.15.8",
+													"enabled": true
+												},
+												{
+													"key": "Vary",
+													"value": "Accept-Encoding",
+													"enabled": true
+												},
+												{
+													"key": "X-Cache",
+													"value": "Miss from cloudfront",
+													"enabled": true
+												},
+												{
+													"key": "Via",
+													"value": "1.1 10a9e9969f05a75cc05e6f70b8499f7e.cloudfront.net (CloudFront)",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Pop",
+													"value": "IAD89-C3",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Id",
+													"value": "bNu_C_L-FipFKt97gymgL477xT0-0MLAnDh1baM5qQjnxutFnJStYA==",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"id\": \"ts_1765758\",\n    \"status\": \"OPEN\",\n    \"filters\": [],\n    \"gameType\": \"SPORT\",\n    \"name\": \"RACE 5 - Vichy\",\n    \"date\": \"2022-08-10T13:45:00Z\",\n    \"markets\": [\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1765758\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        }\n    ]\n}"
+										},
+										{
+											"id": "3efd9177-befd-449d-b4ca-1549c1e8a2b6",
+											"name": "online-soccer-smk-004",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "https://autotest2.app.qa.tsretail.co.za/search/api/fixtures/ts_1748361",
+													"protocol": "https",
+													"host": [
+														"autotest2",
+														"app",
+														"qa",
+														"tsretail",
+														"co",
+														"za"
+													],
+													"path": [
+														"search",
+														"api",
+														"fixtures",
+														"ts_1748361"
+													],
+													"query": [
+														{
+															"key": "f-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-limit",
+															"value": "50",
+															"disabled": true
+														},
+														{
+															"key": "f-name",
+															"value": "UK%2049",
+															"disabled": true
+														},
+														{
+															"key": "m-field-group",
+															"value": "all",
+															"disabled": true
+														},
+														{
+															"key": "f-game-type",
+															"value": "LOTTO",
+															"disabled": true
+														},
+														{
+															"key": "m-limit",
+															"value": "100",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"enabled": true
+												},
+												{
+													"key": "Content-Length",
+													"value": "294",
+													"enabled": true
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "x-api-key, Authorization, Content-Type, Wallet, wallet-id, punter-id",
+													"enabled": true
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "POST,PUT,GET,OPTIONS,DELETE",
+													"enabled": true
+												},
+												{
+													"key": "Content-Encoding",
+													"value": "gzip",
+													"enabled": true
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 10 Aug 2022 13:46:48 GMT",
+													"enabled": true
+												},
+												{
+													"key": "Server",
+													"value": "nginx/1.15.8",
+													"enabled": true
+												},
+												{
+													"key": "Vary",
+													"value": "Accept-Encoding",
+													"enabled": true
+												},
+												{
+													"key": "X-Cache",
+													"value": "Miss from cloudfront",
+													"enabled": true
+												},
+												{
+													"key": "Via",
+													"value": "1.1 ff57be90471f9a747547dbdeaf42a3ea.cloudfront.net (CloudFront)",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Pop",
+													"value": "IAD79-C3",
+													"enabled": true
+												},
+												{
+													"key": "X-Amz-Cf-Id",
+													"value": "VavMmj3sAHmKaAoWoJA01ifCysUz0aok9EednYqEJUmsIHz0_j9OnA==",
+													"enabled": true
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"id\": \"ts_1748361\",\n    \"status\": \"OPEN\",\n    \"quickSearchCode\": \"70297\",\n    \"filters\": [],\n    \"gameType\": \"SPORT\",\n    \"name\": \"Liverpool Montevideo vs. Club Nacional de Football\",\n    \"wagerCloseDate\": \"2022-08-14T18:30:00Z\",\n    \"date\": \"2022-08-14T18:30:00Z\",\n    \"markets\": [\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        },\n        {\n            \"maintenanceValues\": {},\n            \"fixtureId\": \"ts_1748361\",\n            \"sequence\": 0,\n            \"allowSpBet\": false\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "{{baseUrl}}/search/api/fixtures/manuallotto_4082680",
+									"id": "8f7b730c-a4ff-4070-84fe-1c948b3dc59d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/search/api/fixtures/manuallotto_4082680",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"search",
+												"api",
+												"fixtures",
+												"manuallotto_4082680"
+											],
+											"query": [
+												{
+													"key": "Id",
+													"value": "ts_1727415",
+													"disabled": true
+												},
+												{
+													"key": "m-limit",
+													"value": "50",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "{{baseUrl}}/search/api/fixtures?f-status=OPEN&f-quick-search-code=435456456165&m-min=1&f-limit=8",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "b55c514a-6f2d-46db-be76-cf191bfbf99f",
+												"exec": [
+													"var jsonData = pm.response.json();\r",
+													"\r",
+													"\r",
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													"console.log(jsonData);\r",
+													"\r",
+													"\r",
+													"/**\r",
+													" * ss-smk-005\r",
+													" * item.gameType = SPORT\r",
+													" * item.def.type = OPEN_BET \r",
+													" * item.market.type = OPEN_PICK_N \r",
+													" *\r",
+													" */"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "6a198fdc-fb20-44b2-afa3-5300f88f623f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "8e1dfd1e-59da-4c3b-9241-255914c96107",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/search/api/fixtures?f-status=OPEN&f-quick-search-code=435456456165&m-min=1&f-limit=8",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"search",
+												"api",
+												"fixtures"
+											],
+											"query": [
+												{
+													"key": "f-id",
+													"value": "",
+													"description": "List of fixture ID's to filter on.",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "f-def-id",
+													"value": "",
+													"description": "Filter request by fixture definition id (specifically for resulting)",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "f-sport",
+													"value": "",
+													"description": "The name of the sport to search on. Eg. `Football`.",
+													"disabled": true
+												},
+												{
+													"key": "f-venue",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "f-tournament",
+													"value": "",
+													"description": "Name or partial name to search for the tournament.",
+													"disabled": true
+												},
+												{
+													"key": "f-competitor",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "f-min-date",
+													"value": "",
+													"description": "The date to search from. Will default to now if no value is given.",
+													"disabled": true
+												},
+												{
+													"key": "f-tag",
+													"value": "",
+													"description": "Search for tags given to a fixture. Eg. `tagName:tagValue`",
+													"disabled": true
+												},
+												{
+													"key": "f-status",
+													"value": "OPEN",
+													"description": "Fixture status. *Default* `OPEN`"
+												},
+												{
+													"key": "f-min-rank",
+													"value": "",
+													"description": "Minimum score-rating of the fixture you would like to receive.",
+													"disabled": true
+												},
+												{
+													"key": "f-sort-order",
+													"value": "",
+													"description": "The order in which to order items by. Allowed values asc, desc. Default asc.",
+													"disabled": true
+												},
+												{
+													"key": "with-market-filters",
+													"value": "false",
+													"description": "Returns the market status filter options. Default false.",
+													"disabled": true
+												},
+												{
+													"key": "f-quick-search-code",
+													"value": "435456456165"
+												},
+												{
+													"key": "quick-search-code",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "f-region",
+													"value": "",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "f-type",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "f-in-play",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "f-tournament-and-region",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "m-sort-by",
+													"value": "",
+													"description": "Default displayOrder.",
+													"disabled": true
+												},
+												{
+													"key": "m-sort-order",
+													"value": "",
+													"description": "Default asc.",
+													"disabled": true
+												},
+												{
+													"key": "m-start",
+													"value": "",
+													"description": "The index value of where to start searching. Default 0.",
+													"disabled": true
+												},
+												{
+													"key": "m-field",
+													"value": "",
+													"description": "Default none.",
+													"disabled": true
+												},
+												{
+													"key": "m-min",
+													"value": "1",
+													"description": "The minimum amount of markets that match the market search criteria. Default 1."
+												},
+												{
+													"key": "m-tiered",
+													"value": "",
+													"description": "Filter for fixtures that have tiered markets. Default false",
+													"disabled": true
+												},
+												{
+													"key": "m-quick-search-code",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "s-quick-search-code",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "m-tag",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "m-def-id",
+													"value": "",
+													"description": "Array of market definition ids to filter on",
+													"disabled": true
+												},
+												{
+													"key": "m-id",
+													"value": "",
+													"description": "List of market ID's to filter on.",
+													"disabled": true
+												},
+												{
+													"key": "m-min-wager-start",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "m-max-wager-start",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "m-min-wager-end",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "m-max-wager-end",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "s-name",
+													"value": "",
+													"description": "Name of the selection to search for.",
+													"disabled": true
+												},
+												{
+													"key": "f-name",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "f-limit",
+													"value": "8"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "7d4ed22a-a2c8-4778-b993-539807b44111"
+						},
+						{
+							"name": "/private/cache",
+							"id": "b6d42e26-2084-4734-a503-706fbfb9f625",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseUrl}}/search/api/private/cache"
+							},
+							"response": []
+						}
+					],
+					"id": "559c36d1-977c-4206-8077-d2623f8740ab"
+				}
+			],
+			"id": "9fa2de49-50cc-4ce4-85c4-5050635d5c2d"
+		}
+	]
+}
