@@ -575,6 +575,11 @@
 							"id": "7d4ed22a-a2c8-4778-b993-539807b44111"
 						},
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "a06c2ed5-fd9d-46fc-8a04-4539867270d0"
+						},
+						{
 							"name": "/private/cache",
 							"id": "b6d42e26-2084-4734-a503-706fbfb9f625",
 							"protocolProfileBehavior": {
